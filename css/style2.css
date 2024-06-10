@@ -1,0 +1,134 @@
+/* CSS para o menu */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #101010;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #111;
+}
+
+
+/* CSS para o formulário de cadastro e consulta de funcionários */
+form {
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #cbcbcb;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="time"],
+input[type="date"],
+input[type="file"] {
+    width: calc(500px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="button"] {
+    padding: 10px 20px;
+    background-color: #8c6b8c;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="button"]:hover {
+    background-color: #DA70D6;
+}
+
+ul#listaFuncionarios {
+    margin: 20px 0; /* Margem superior e inferior */
+    padding: 0; /* Removendo qualquer preenchimento padrão */
+    list-style-type: none; /* Removendo os marcadores de lista padrão */
+    display: flex;
+    flex-wrap: wrap; /* Para que os funcionários possam quebrar a linha conforme necessário */
+    justify-content: space-around; /* Para espaçamento uniforme entre os funcionários */
+}
+
+/* Estilo para cada item da lista de funcionários */
+ul#listaFuncionarios li {
+    width: calc(33.33% - 20px); /* Definindo a largura de cada funcionário para 33.33% com margem */
+    margin: 10px; /* Espaçamento entre os funcionários */
+    background-color: #f2f2f2; /* Cor de fundo cinza */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 8px; /* Borda arredondada */
+    text-align: center; /* Centralizar conteúdo */
+}
+
+
+/* Media Queries */
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    button {
+        padding: 8px 10px;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+    body {
+        margin: 20px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 901px) {
+    body {
+        margin: 30px;
+        font-size: 18px;
+    }
+
+    
+    h1 {
+        font-size: 24px;
+    }
+}
