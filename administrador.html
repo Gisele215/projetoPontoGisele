@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Administração</title>
+    <!-- Inclua o CSS -->
+    <link rel="stylesheet" href="css/style4.css">
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="cadastro.html">Home</a></li>
+            <li><a href="registro.html">Registro de ponto</a></li>
+            <li><a href="administrador.html">Administração</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <!-- Adicione outros links de menu conforme necessário -->
+        </ul>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <h1>Painel de Administração</h1>
+
+    <!-- Tabela de Funcionários -->
+    <h2>Lista de Funcionários</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Área</th>
+                <th>Endereço</th>
+                <th>Telefone</th>
+                <th>Imagem</th>
+            </tr>
+        </thead>
+        <tbody id="listaUsuarios"></tbody>
+    </table>
+
+    <!-- Tabela de Registros de Ponto -->
+    <h2>Lista de Registros de Ponto</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Data</th>
+                <th>Localização</th>
+                <th>Imagem</th>
+            </tr>
+        </thead>
+        <tbody id="listaRegistros"></tbody>
+    </table>
+
+    <!-- Inclua o Firebase e o script -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

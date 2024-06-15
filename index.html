@@ -1,40 +1,61 @@
+<!-- Index.html ou Administrador.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" type="text/css" href="css/style.css">
- <title>Cadastro de Usúarios</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Login de Usuários</title>
 </head>
 <body>
-   
-   <nav>
-      <ul class="menu">
-          <li><a href="cadastro.html">Home</a></li>
-          <li><a href="mapa.html">Mapa</a></li>
-      </ul>
-  </nav>
-<br>
-<br>
-<br>
-<br>
- <form id="loginForm">
-    <h1>Login de Usuário</h1>
-    <label for="email">Usúario/Email:</label>
-    <input type="text" id="email" name="email"><br>
 
-    <label for="senha">Senha:</label>
-    <input type="password" id="senha" name="senha"><br>
-    <button type="submit">Entrar</button>
- </form>
-   
- <!-- Inclua o Firebase --> 
- <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
- <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
- <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
- <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
- 
- <script src="app.js"></script>
- <script src="login.js"></script>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="registro.html">Registro de Ponto</a></li>
+            <li><a href="administrador.html">Administração</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <!-- Adicione outros links de menu conforme necessário -->
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Formulário para Login de Usuário Comum -->
+    <form id="loginForm">
+        <h1>Login de Usuário Comum</h1>
+        <label for="email">Usuário/Email:</label>
+        <input type="text" id="email" name="email"><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha"><br>
+        <button type="submit">Entrar</button>
+    </form>
+
+
+    <br>
+    <br>
+    <br>
+    <!-- Formulário para Login de Administrador -->
+    <form id="adminLoginForm">
+        <h1>Login de Administrador</h1>
+        <label for="adminEmail">Email de Administrador:</label>
+        <input type="text" id="adminEmail" name="adminEmail"><br>
+
+        <label for="adminSenha">Senha de Administrador:</label>
+        <input type="password" id="adminSenha" name="adminSenha"><br>
+        <button type="submit">Entrar como Administrador</button>
+    </form>
+
+    <!-- Inclua o Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+
+    <script src="app.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>

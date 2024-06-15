@@ -23,6 +23,10 @@
     background-color: #cecbcb;
 }
 
+
+
+
+
 /* CSS para o formulário de login */
 #loginForm {
     width: 300px;
@@ -63,6 +67,57 @@
 #loginForm button[type="submit"]:hover {
     background-color: #A0522D;
 }
+
+
+
+
+
+
+
+/* CSS para o formulário de login */
+#loginForm {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#loginForm h1 {
+    text-align: center;
+}
+
+#loginForm label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#loginForm button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #CD853F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#loginForm button[type="submit"]:hover {
+    background-color: #A0522D;
+}
+
+
+
+
 
 
 
